@@ -20,12 +20,12 @@ const SITE_LOGO = process.env.SITE_LOGO || '';
 const SITE_SAMEAS = process.env.SITE_SAMEAS || ''; // Comma-separated social URLs
 const TARGET_LANG = process.env.TARGET_LANG || 'en';
 const FEED_URL = process.env.FEED_URL || '';
-const MAX_JOBS = Number(process.env.MAX_JOBS || 100);
+const MAX_JOBS = Number(process.env.MAX_JOBS || 1000);
 const CRON_SCHEDULE = process.env.CRON_SCHEDULE || '0 */6 * * *';
 const HAS_OPENAI = !!process.env.OPENAI_API_KEY;
 const CLICK_SECRET = process.env.CLICK_SECRET || crypto.randomBytes(16).toString('hex');
 const TARGET_PROFESSION = process.env.TARGET_PROFESSION || 'Delivery Driver';
-const AI_PROCESS_LIMIT = Number(process.env.AI_PROCESS_LIMIT || 100); // 0 = unlimited
+const AI_PROCESS_LIMIT = Number(process.env.AI_PROCESS_LIMIT || 1000); // 0 = unlimited
 const TARGET_COUNTRY = process.env.TARGET_COUNTRY || 'US';
 const TARGET_COUNTRY_NAME = process.env.TARGET_COUNTRY_NAME || 'United States';
 
